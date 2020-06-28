@@ -1,0 +1,110 @@
+#cuerpo{
+    width: 100%;
+    overflow-x: hidden;              /*oculta el scroll horizontal*/
+}
+
+ul#menu {                                 /*menu principal*/
+    background: rgb(8, 33, 145);
+    width: 100%;
+    float:left;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+     
+   ul#menu li {
+    color: #fff;
+    float: left;
+    list-style: none;
+    margin: 0% 5%;
+   }
+     
+   ul#menu li:hover{
+    color: #aaa073;
+    cursor:pointer;
+   }
+     
+   ul#menu ul {
+    display: none;
+    position: absolute;
+    top: 183px;
+    background: #333;
+    color: #fff;
+    padding: 5px 0px 5px 5px;
+    margin: 0;
+    }
+     
+   ul#menu ul li{
+    float: left;
+    color: #fff;
+    width:100%;
+    margin:2% 0%;
+   }
+    
+
+   ul#menu ul li a{
+    color: #fff;
+   
+   }
+/*
+   ul#menu ul li a:hover{
+    color: #aaa073;
+   
+    cursor:pointer;
+   }
+     */
+   ul#menu li:hover ul ul,ul#menu li:hover ul ul ul,ul#menu li.iehover ul ul,ul#menu li.iehover ul ul ul {
+    display: none;
+    cursor:pointer;
+   }
+     
+   ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.iehover ul,ul#menu ul li.iehover ul,ul#menu ul ul li.iehover ul {
+    display: block;
+    cursor:pointer;
+   }
+
+   #contacto{        /* contacto atención a clientes */
+       float: right;
+       margin-right: 80px;
+       margin-top: 20px;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+   }
+
+   #numero{
+       color: rgb(8, 33, 145);
+       
+   }
+  
+   .seguro img{
+       width: 255px;
+       height: 255px;
+
+   }
+     .seguro{
+        float:left;
+        width:360px;
+        height: 360px;
+        text-align: justify;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 2.5em;
+
+        
+     }
+
+      .afterbox{
+          clear: left;
+      }
+     
+    
+   footer{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top: 1px solid black;
+
+   }
+
+
+
+   

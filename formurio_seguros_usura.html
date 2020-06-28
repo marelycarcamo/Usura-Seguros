@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario de Registro</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+           
+           body, footer{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+           }
+
+           
+           #logo{
+               width:250px;
+               float: left;
+           }
+
+            label{
+                margin-right: 25px;
+            }
+
+            #formulario{
+                color:rgb(8, 33, 145);
+               margin-top: 50px;
+                overflow:auto;
+                border-collapse:collapse;
+                margin-left: 50px;
+                float: left ;
+
+
+            }
+            
+
+          
+            th{
+                text-align: left;
+                font-size: small;
+         
+            }
+
+            #tabla1 input{
+                width: 300px;
+            }
+            #tabla3 input,select{
+                width: 300px;
+            }
+           
+                
+            }
+            th:nth-child(1){
+               padding-top: 1em;
+                
+            }
+
+            div{
+                float: left;
+                width:320px ;
+                margin-left: 20px;
+                padding: 1em;
+
+            }
+            #caja1{
+                background-color:rgb(8, 33, 145);
+                color:white;
+                margin-top: 30px;
+            }
+                         
+            #caja2{
+                background-color:rgba(202, 206, 228, 0.897);
+
+            }  
+              
+
+           
+
+            footer{
+                text-align: center;
+                clear: left;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <img id="logo" src="logo_usura.png" alt="" >
+        <form name=f1 method="POST" action="" id="formulario">
+
+         
+            
+            <h3>Solicitar Información / Cotizar Seguros </h3>
+            <p style="font-size:small">Te contactaremos a la brevedad</p>
+
+            <table >
+                <tbody id="tabla1">
+                    <tr><th><label for="nombre">Nombre</label></th></tr>
+                    <tr><td><input type="text" name="nobre" class="nombre" value="" placeholder="Ej. Juan" required></td></tr>
+                    
+                    <tr><th><label for="apellidos">Apellidos</label></th></tr>
+                    <tr><td><input type="text" name="apellidos" value="" placeholder="Ej. Pérez" required></td></tr>
+                
+                    <tr><th><label for="email">Correo Electrónico</label</th></tr>
+                    <tr><td><input type="email" name="correo" placeholder="usuario@dominio.com"></td></tr>
+                    
+                    <tr><th><label for="telefono">Teléfono</label></th></tr>
+                    <tr><td><input type="number" name="telefono" placeholder="999999999"></td></tr>
+
+                    <tr><th><label for="rut">Rut</label></th></tr>
+                    <tr><td><input type="number" name="rut" id="" placeholder="11.111.111-1"> </td></tr>
+                   
+                   
+            </tbody>
+     
+        </table>
+
+        
+                     <br><br>
+
+                    <tr><th>Motivo de Contacto</th></tr>
+
+       
+                    <table>
+
+                        <tbody id="tabla2">     
+                            <tr>
+                                <th><label><input type="radio" name="motivo" value="motivo1" >Cotizar Auto</label></th>
+                                <th><label><input type="radio" name="motivo" value="motivo2" >Consulta Asistencia</label></th>
+                                             
+                            </tr>
+                            <tr>
+                                <th><label><input type="radio"name="motivo" value="motivo3" >Cotizar Hogar u otro</label></th>
+                                <th><label><input type="radio" name="motivo" value="motivo4" >Consulta Siniestro de Auto</label></th>
+                            </tr>
+                            <tr>
+                                <th><label><input type="radio" name="motivo" value="motivo5" >Consulta Estado y Coberturas</label></th>
+                                <th><label><input type="radio" name="motivo" value="motivo6" >Consulta Siniestro Hogar u Otro</label></th>
+                            </tr>
+                            <tr>
+                                <th><label><input type="radio" name="motivo" value="motivo7" >Consulta Cuotas y Vencimientos</label></th>
+                                <th><label><input type="radio" name="motivo" value="motivo7" >Consulta Reembolsos Colectivos Vida</label></th>
+                            </tr>
+                            <tr>
+                                <th><label><input type="radio" name="motivo" value="motivo9" >Otra Consulta</label></th>
+                            </tr>
+
+                        </tbody>        
+                        
+                    </table>
+                    
+
+
+<br>
+                    
+<table>
+    <tbody id="tabla3">
+
+
+                         
+
+
+
+                    <tr>
+                        <th><label for="region">Región</label></th>  
+                    </tr> 
+                    <tr>
+                        <td>
+                            <select name=region onchange="cambia_provincia()" > 
+                                <option value="0" selected>Seleccione... 
+                                <option value="1">Región de Arica y Parinacota
+                                <option value="2">Región de Tarapacá
+                                <option value="3">Región de Antofagasta
+                                <option value="4">Región de Atacama
+                                <option value="5">Región de Coquimbo
+                                <option value="6">Región de Valparaíso
+                                <option value="7">Región de O'Higgins
+                                <option value="8">Región del Maule
+                                <option value="9">Región del Ñuble
+                                <option value="10">Región de Biobío
+                                <option value="11">Región de la Araucanía
+                                <option value="12">Región de los Ríos
+                                <option value="13">Región de los Lagos
+                                <option value="14">Región de Aysén
+                                <option value="15">Región de Magallanes 
+                                <option value="16">Región Metropolitana
+                            </select>
+                        </td>
+                    </tr>
+                    <tr><th><label for="provincia">Provincia</label></th></tr>
+                    <tr>
+                        <td>
+                         
+                        <select name=provincia> 
+                            <option value="-">- 
+                        </select> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="comuna">Comuna</label></th>
+                       
+                    <tr><td><input type="text" name="comuna" value="" placeholder="Ej. Paillaco" ></td></tr>
+                    <tr>
+                        <th>
+                            <label for="comentario">Comentario</label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <input type="textarea" name="comentario" value="" style="line-height: 4;"  >
+                        </th></tr>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+
+            <input type="submit" name="enviar" value="Enviar Formulario">
+            <button type="reset">Limpiar Formulario</button>
+
+            
+ </form>
+<div id="caja1">
+<h3>Contáctanos </h3>
+</div>
+<div id="caja2">
+    <p>Para solicitar este Seguro</p>
+    <p><img src="celular.png" alt="">600 411 1000</p>
+    <br>
+    <p>Para solicitar asistencia a tu vehículo
+    </p>
+    <p><img src="celular.png" alt="">600 687 1000</p>
+
+
+</div>
+
+
+ <footer>
+     <br><br>
+     <p style="border-top: 1px solid black;">Todos los Derechos Reservados 2020 - 2022</p>
+     <p>SEGUROS USURA</p>
+    
+ </footer>
+ <br>
+         
+            
+<script>
+              var provincias_1=new Array("-","Arica","Parinacota"); /*Arica y Parinacota*/
+              var provincias_2=new Array("-","Tamarugal","Iquique");  /*Tarapacá*/
+              var provincias_3=new Array("-","El Loa","Tocopilla","Antofagasta");   /*Antofagasta*/
+              var provincias_4=new Array("-","Chañaral","Huasco","Copiapó");  /*Atacama*/
+              var provincias_5=new Array("-","Elqui","Choapa","Limarí"); /*Coquimbo*/
+              var provincias_6=new Array("-","Valparaíso","Isla de Pascua","Quillota","San Felipe","Marga Marga","San Antonio","Los Andes","Petorca");  /*Valparaíso*/
+              var provincias_7=new Array("-","Cachapoal","Cardenal Caro","Colchagua"); /* ohiggins */
+              var provincias_8=new Array("-","Cauquenes","Curicó","Linares","Talca"); /* maule */
+              var provincias_9=new Array("-","Itata","Diguillín","Punilla"); /*ñuble */
+              var provincias_10=new Array("-","Arauco","Biobío","Concepción"); /*Biobio*/
+              var provincias_11=new Array("-","Cautín","Malleco");  /*Araucania*/
+              var provincias_12=new Array("-","Valdivia","El Ranco");   /* Los Ríos */ 
+              var provincias_13=new Array("-","Osorno","Llanquihue","Chiloé","Palena");  /*Los lagos*/
+              var provincias_14=new Array("-","Aysén","Capitán Prat","Coyhaique","General Carrera");    /*Aysén */
+              var provincias_15=new Array("-","Antártica Chilena","Magallánes","Tierra del Fuego","{Ultima Esperanza");  /*Magallanes */
+              var provincias_16=new Array("-","Chacabuco","Cordillera","Maipo","Melipilla","Santiago","Talagante");    /*santiago */
+            
+            
+              var todasProvincias = [
+                [], 
+                provincias_1,
+                provincias_2,
+                provincias_3,
+                provincias_4,
+                provincias_5,
+                provincias_6,
+                provincias_7,
+                provincias_8,
+                provincias_9,
+                provincias_10,
+                provincias_11,
+                provincias_12,
+                provincias_13,
+                provincias_14,
+                provincias_15,
+                provincias_16,
+              
+              ];
+            
+              function cambia_provincia(){ 
+                   //tomo el valor del select de la region elegido 
+                   var region 
+                   region = document.f1.region[document.f1.region.selectedIndex].value 
+                   //miro a ver si la region está definido 
+                   if (region != 0) { 
+                      //si estaba definido, entonces coloco las opciones de la provincia correspondiente. 
+                      //selecciono el array de provincia adecuado 
+                      mis_provincias=todasProvincias[region]
+                      //calculo el numero de provincias 
+                      num_provincias = mis_provincias.length 
+                      //marco el número de provincias en el select 
+                      document.f1.provincia.length = num_provincias 
+                      //para cada provincia del array, la introduzco en el select 
+                      for(i=0;i<num_provincias;i++){ 
+                         document.f1.provincia.options[i].value=mis_provincias[i] 
+                         document.f1.provincia.options[i].text=mis_provincias[i] 
+                      }	
+                   }else{ 
+                      //si no había provincia seleccionada, elimino las provincias del select 
+                      document.f1.provincia.length = 1 
+                      //coloco un guión en la única opción que he dejado 
+                      document.f1.provincia.options[0].value = "-" 
+                      document.f1.provincia.options[0].text = "-" 
+                   } 
+                   //marco como seleccionada la opción primera de provincia 
+                   document.f1.provincia.options[0].selected = true 
+            }
+            
+              </script>
+
+       
+   </body>
+</html>
